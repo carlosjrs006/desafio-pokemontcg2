@@ -24,7 +24,7 @@ Assim que baixar o projeto, abra um terminal na pasta do mesmo e envie o seguint
 
    ![image](https://github.com/carlosjrs006/desafio-pokemontcg2/assets/83041815/7730c4ae-d646-4c34-8f6e-f58b2df8e705)
 
-3. Escolha as suas cartas para montar o seu deck, será necessário no mínimo 24 cartas e no máximo 60 para conseguir salvar, não esqueça de dá um nome ao deck. 3 - Navegue entre as setas para paginar as cartas, e sugir mais 250 cartas novas. 4 - Se necessário, utilize o filtro para pesquisar o nome de alguma carta (PRESSIONE ENTER PARA EFETUAR A PESQUISA). 5 - Não é possível adicionar mais de 4 cartas com o mesmo nome, seguindo as regras do jogo.
+3. Escolha as suas cartas para montar o seu deck, será necessário no mínimo 24 cartas e no máximo 60 para conseguir salvar, não esqueça de dá um nome ao deck. 3 - Navegue entre as setas para paginar as cartas, e sugir mais 250 cartas novas. 4 - Se necessário, utilize o filtro para pesquisar o nome de alguma carta. 5 - Não é possível adicionar mais de 4 cartas com o mesmo nome, seguindo as regras do jogo.
 
 **Para usar o filtro, pesquise por um nome do pokémon EX: "Charizard", caso queira pesquisar somente uma parte do nome, acrescente um " * " no fim da palavra EX: "Char * " é preciso fazer isso pois a API Oficial do Pokémon, não possui um endpoint específico para uma pesquisa incompleta.
 
