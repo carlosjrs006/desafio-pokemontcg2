@@ -17,4 +17,5 @@ Assim que baixar o projeto, abra um terminal na pasta do mesmo e envie o seguint
 ## Criar Deck
 
 1. tela inicial https://desafio-pokemontcg2.vercel.app/ ou http://localhost:4200/
-![Uploading image.png…]()
+
+![image](https://github.com/carlosjrs006/desafio-pokemontcg2/assets/83041815/bd83ba58-87ca-457f-816e-77fd1ccde7ae)
