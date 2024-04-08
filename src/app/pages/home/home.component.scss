@@ -1,0 +1,17 @@
+.container2 {
+  display: flex;
+  justify-content: center; /* Alinhamento horizontal */
+  align-items: center; /* Alinhamento vertical */
+  height: 150vh; /* Altura total da tela */
+  gap: 150px;
+  margin-left: 30px;
+}
+
+button {
+  width: 200px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

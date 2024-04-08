@@ -1,0 +1,11 @@
+<app-loading *ngIf="false"></app-loading>
+<button routerLink="/" class="m-4" style="margin-left: 40px;background-color: #fcea69; color: black;" mat-raised-button>Voltar ao menu principal</button>
+
+<div *ngIf="decks.length === 0" class="flex space-x-4 justify-center p-8">
+  <span class="font-extrabold text-3xl text-center" style="color: #ffcb08;" >Você ainda não adicionou nenhum deck</span>
+
+</div>
+<div style="display: flex;flex-direction: row;" class="flex flex-wrap gap-8">
+  <app-deck *ngFor="let deck of decks" [deck]="deck" [cards]="deck.cards" [nameDeck]="deck.name"></app-deck>
+</div>
+

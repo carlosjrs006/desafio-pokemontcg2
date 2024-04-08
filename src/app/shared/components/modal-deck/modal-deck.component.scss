@@ -1,0 +1,16 @@
+.container{
+  width: 800px;
+  height: 800px;
+}
+.infos{
+  background-color:#ffcb08;
+}
+.no-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow: auto;
+}
+
+h2{
+  font-size: 20px;
+}

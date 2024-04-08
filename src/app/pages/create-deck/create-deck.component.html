@@ -1,0 +1,52 @@
+<app-loading *ngIf="loadingCards"></app-loading>
+<button routerLink="/" class="m-4" style="margin-left: 40px;background-color: #fcea69; color: black;" mat-raised-button>Voltar ao menu principal</button>
+<!-- Formulário -->
+<div style="position: fixed; top: 100px; left: 45px;">
+  <form [formGroup]="formCards">
+    <h4>Criar Baralho</h4>
+    <igx-input-group type="line">
+      <input igxInput name="fullName1" formControlName="fullName1"  type="text" />
+      <label igxLabel for="fullName1">Nome Baralho</label>
+    </igx-input-group>
+    <igx-input-group type="search" style="width: 500px;">
+      <input #input1 igxInput name="input1" formControlName="input1" placeholder="Search" />
+      <igx-prefix>
+        <igx-icon>search</igx-icon>
+      </igx-prefix>
+      <igx-suffix *ngIf="input1.value.length > 0" (click)="input1.value = ''">
+        <igx-icon>clear</igx-icon>
+      </igx-suffix>
+    </igx-input-group>
+    <div>
+      <p>Cartas Selecionadas: {{ cardsSelected }}</p>
+    </div>
+    <button
+    [disabled]="verfificaSePodeVisualizar()"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" (click)="visualizarBaralho()">
+      Visualizar Baralho
+    </button>
+  </form>
+</div>
+
+<!-- Espaço para os cards -->
+<div style="margin-left: 640px; margin-top: 100px;">
+  <!-- Cards -->
+  <section
+    *ngIf="true"
+    class="flex flex-wrap gap-8"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="300"
+    (scrolled)="onScroll()"
+    [scrollWindow]="true"
+  >
+    <div *ngFor="let card of cards">
+      <img
+        (click)="addCard(card)"
+        [src]="card.images.small"
+        alt=""
+        class="h-40 transform transition-transform duration-500 hover:scale-110"
+      />
+    </div>
+  </section>
+</div>
