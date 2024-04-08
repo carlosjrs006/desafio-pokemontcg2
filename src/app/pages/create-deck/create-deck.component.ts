@@ -167,7 +167,7 @@ export class CreateDeckComponent implements OnInit {
   }
 
   createDeck(){
-    if((this.newDeck.cards.length >= 4 && this.newDeck.cards.length <= 60) && this.validateDeckName()){
+    if((this.newDeck.cards.length >= 24 && this.newDeck.cards.length <= 60) && this.validateDeckName()){
         let handlerDeck: Deck = {
           name: this.newDeck.name,
           cards: this.newDeck.cards
