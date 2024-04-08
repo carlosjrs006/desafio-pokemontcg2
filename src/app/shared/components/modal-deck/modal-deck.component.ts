@@ -40,7 +40,6 @@ export class ModalDeckComponent {
   openedLightning = true;
 
   ngOnInit(): void {
-    console.log('data: ', this.data.deck);
     for(let item of this.data.deck.cards){
       this.types.push(item.types);
       if(item.supertype === "Pokémon"){

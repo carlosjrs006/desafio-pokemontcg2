@@ -12,10 +12,11 @@ export class ListDeckComponent {
   constructor(public globalContext: GlobalContextService, private router: Router){}
   decks: any = [];
   exibeMsg = false;
-
+  public loadingCards = false;
 
   ngOnInit(){
   this.decks = this.globalContext.getDeck();
-  console.log('decks: ', this.decks)
  }
+
+
 }

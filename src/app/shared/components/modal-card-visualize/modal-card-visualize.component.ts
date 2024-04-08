@@ -39,7 +39,6 @@ export class ModalCardVisualizeComponent {
   openedLightning = true;
 
   ngOnInit(): void{
-    console.log('Entrou modal verificar');
     console.warn(this.data.newDeck);
     for(let item of this.data.newDeck.cards){
       this.types.push(item.types);

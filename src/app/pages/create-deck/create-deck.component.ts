@@ -71,7 +71,7 @@ export class CreateDeckComponent implements OnInit {
   }
 
   onScroll() {
-    console.log('Entrou no scroll')
+
     this.page++;
     this.loadingCards = true;
     if(this.valueFilterName !== null && this.valueFilterName !== ''){
@@ -89,13 +89,8 @@ export class CreateDeckComponent implements OnInit {
 
   filterByName(){
     this.formCards.get('input1')?.valueChanges.pipe(takeUntil(this.unsubscribe$)).subscribe( values =>{
-
-      if(values.length > 3){
-        console.log('values change: ', values);
-        this.valueFilterName = values;
-        this.getList(values);
-      }
-
+      this.valueFilterName = values;
+      this.getList(values);
     })
   }
 
@@ -104,7 +99,7 @@ export class CreateDeckComponent implements OnInit {
       data: {img: card.images?.small},
     })
     dialogRef.afterClosed().subscribe(result => {
-      console.log(result)
+
       if(result === "add"){
         const cardWithSameName = this.newDeck.cards.filter(
           (c) => c.name === card.name
@@ -177,9 +172,9 @@ export class CreateDeckComponent implements OnInit {
           name: this.newDeck.name,
           cards: this.newDeck.cards
         }
-        console.log('handlerDeck: ', handlerDeck)
+
         this.globalContext.Decks.push(handlerDeck);
-        console.log('this.globalContext.Decks: ', this.globalContext.Decks)
+
         Swal.fire({
           icon: "success",
           title: "Deck criado com sucesso!",
