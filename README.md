@@ -8,7 +8,7 @@ Framework Angular 16, Angular Material(UI), Tailwindcss(CSS-inline), Sweet Alert
 
 ## Requisitos para compilar o projeto
 
-Caso queira usar em Production: o app foi deployado na vercel. url do site https://desafio-pokemontcg2.vercel.app
+Caso queira usar em Production: o app foi deployado na vercel. url do site https://desafio-pokemontcg2.vercel.app/
 
 O projeto atualizado se encontra na branch main, voce pode realizar o download através do git clone https://github.com/carlosjrs006/desafio-pokemontcg2.git.
 
